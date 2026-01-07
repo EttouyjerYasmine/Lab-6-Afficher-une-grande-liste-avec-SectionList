@@ -10,16 +10,6 @@ Créer une application mobile avec SectionList qui affiche un menu de restaurant
 
 <img width="1919" height="939" alt="Lab6 1" src="https://github.com/user-attachments/assets/74dc3a12-082a-40ee-bdf3-c9f892d067dc" />
 
-###### Points clés :
-
-En-tête avec titre et boutons
-
-Sections avec fond jaune et texte noir
-
-Lignes de séparation fines entre items
-
-Pied de page avec copyright
-
 ####  ÉCRAN 2 : MODE PROMO ACTIVÉ
 
 <img width="959" height="449" alt="Lab6 Promo" src="https://github.com/user-attachments/assets/5707527e-f331-4c9e-8b74-ffa7b36b0f3a" />
@@ -56,17 +46,6 @@ Seule l'affichage change, pas les données
 Footer indique la devise active
 
 
-### Fonctionnalités techniques 
-
-SectionList Props Utilisées
-Prop-----	Valeur----------	--------Effet
-sections	---menuItemsToDisplay	------Données structurées
-renderItem---Fonction Item---------------	Affiche chaque plat
-renderSectionHeader	Fonction Header	Affiche les titres
-keyExtractor	item.id	Clés uniques
-ItemSeparatorComponent	Separator	Ligne entre items
-ListFooterComponent	ListFooter	Copyright
-ListEmptyComponent	Message vide	État sans données
 
 ### Auteurs : 
 
