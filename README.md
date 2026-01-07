@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+## Restaurant Menu App - Guide de Démonstration
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+### Objectif du TP
 
-## Get started
+Créer une application mobile avec SectionList qui affiche un menu de restaurant organisé en catégories.
 
-1. Install dependencies
+### Démonstrations Visuelles
 
-   ```bash
-   npm install
-   ```
+#####  ÉCRAN 1 : INTERFACE PAR DÉFAUT
 
-2. Start the app
+<img width="1919" height="939" alt="Lab6 1" src="https://github.com/user-attachments/assets/74dc3a12-082a-40ee-bdf3-c9f892d067dc" />
 
-   ```bash
-   npx expo start
-   ```
+###### Points clés :
 
-In the output, you'll find options to open the app in a
+En-tête avec titre et boutons
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Sections avec fond jaune et texte noir
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Lignes de séparation fines entre items
 
-## Get a fresh project
+Pied de page avec copyright
 
-When you're ready, run:
+####  ÉCRAN 2 : MODE PROMO ACTIVÉ
 
-```bash
-npm run reset-project
-```
+<img width="959" height="449" alt="Lab6 Promo" src="https://github.com/user-attachments/assets/5707527e-f331-4c9e-8b74-ffa7b36b0f3a" />
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+###### Filtrage :
 
-## Learn more
+Montré : Plats < $8
 
-To learn more about developing your project with Expo, look at the following resources:
+Masqué : Plats ≥ $8
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Sections vides sont retirées
 
-## Join the community
+Bouton "Promo" devient "Show All"
 
-Join our community of developers creating universal apps.
+Couleur du bouton change (jaune → orange)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+####  ÉCRAN 3 : DEVISES DIFFÉRENTES
+
+<img width="959" height="474" alt="Lab6 Euro" src="https://github.com/user-attachments/assets/57de3ec5-20ba-43c7-82c2-1f46dce2ab30" />
+
+<img width="959" height="478" alt="Lab6 Mad" src="https://github.com/user-attachments/assets/8f5af440-5e2e-4a34-8cc4-8d60b57eb2d0" />
+
+<img width="959" height="473" alt="Lab6 2" src="https://github.com/user-attachments/assets/fa7a6c9e-ee3d-42f2-a06b-fdd8bb4e472b" />
+
+###### Conversion :
+
+USD → EUR : ×0.85
+
+USD → MAD : ×9.5
+
+Seule l'affichage change, pas les données
+
+Footer indique la devise active
+
+
+### Fonctionnalités techniques 
+
+SectionList Props Utilisées
+Prop-----	Valeur----------	--------Effet
+sections	---menuItemsToDisplay	------Données structurées
+renderItem---Fonction Item---------------	Affiche chaque plat
+renderSectionHeader	Fonction Header	Affiche les titres
+keyExtractor	item.id	Clés uniques
+ItemSeparatorComponent	Separator	Ligne entre items
+ListFooterComponent	ListFooter	Copyright
+ListEmptyComponent	Message vide	État sans données
+
+### Auteurs : 
+
+Réalisé par : Ettouyjer Yasmine.
+
+Encadré par : Pr.Mohammed Lechgar.
+
+Date : Le 07-01-2026.
+
+
